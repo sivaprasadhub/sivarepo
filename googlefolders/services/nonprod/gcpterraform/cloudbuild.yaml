@@ -34,7 +34,7 @@ steps:
           cd googlefolders/services/nonprod/gcpterraform/environments/$BRANCH_NAME
           terraform init
         else
-          for dir in environments/*/
+          for dir in googlefolders/services/nonprod/gcpterraform/environments/*/
           do 
             cd ${dir}   
             env=${dir%*/}
@@ -58,7 +58,7 @@ steps:
           cd googlefolders/services/nonprod/gcpterraform/environments/$BRANCH_NAME
           terraform validate
         else
-          for dir in environments/*/
+          for dir in googlefolders/services/nonprod/gcpterraform/environments/*/
           do 
             cd ${dir}   
             env=${dir%*/}
@@ -71,7 +71,7 @@ steps:
             cd ../../
           done
         fi 
-  # [END tf-plan]
+  # [END tf-validate]
   
   # [START tf-plan]
   - id: 'tf plan'
@@ -84,7 +84,7 @@ steps:
           cd googlefolders/services/nonprod/gcpterraform/environments/$BRANCH_NAME
           terraform plan
         else
-          for dir in environments/*/
+          for dir in googlefolders/services/nonprod/gcpterraform/environments/*/
           do 
             cd ${dir}   
             env=${dir%*/}
