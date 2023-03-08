@@ -1,2 +1,2 @@
 
-This is Azure directory
+This is Azure directory, directory dev
