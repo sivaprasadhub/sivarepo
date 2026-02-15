@@ -1,2 +1,6 @@
 
 This is Azure directory, directory dev
+this is first commit
+this is secong commit
+this is third commit
+this is fourth commit
